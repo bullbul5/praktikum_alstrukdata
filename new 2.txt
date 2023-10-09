@@ -1,0 +1,47 @@
+#include <string>
+#include <iostream>
+using namespace std;
+
+class Shape {
+private:
+    string color;
+
+public:
+    void setColor(string color) {
+        this->color = color;
+    }
+
+    string getColor() {
+        return color;
+    }
+};
+
+class Rectangle : public Shape {
+private:
+    float width;
+    float height;
+
+public:
+    Rectangle(string color, float width, float height) {
+        setColor(color);
+        this->width = width;
+        this->height = height;
+    }
+
+    float getArea() {
+        return width * height;
+    }
+};
+
+int main() {
+    string color = "Black";
+    float width = 7.5;
+    float height = 3.0;
+
+    Rectangle rectangle(color, width, height);
+
+    cout << "Color: " << rectangle.getColor() << endl;
+    cout << "Area: " << rectangle.getArea() << endl;
+
+    return 0;
+}

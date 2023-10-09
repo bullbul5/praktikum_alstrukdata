@@ -1,0 +1,33 @@
+ pseudocode to find the largest of three numbers A,B, and C
+
+ Start
+ declare a,b,c
+
+ write	"masukan nilai a :"
+ read a
+ write	"masukan nilai b :"
+ read b
+ write	"masukan nilai c :"
+ read c
+ 
+ if a > and > c then
+ write "a adalah nilai terbesar"
+ else if b > a and b > c then
+ write "b adalah nilai terbesar"
+ else "c adalah nilai terbesar"
+ end if
+ End
+
+Start
+initialize sum = 0
+Loop to iterate each range 1-50
+sum = sum + i
+write sum
+end
+
+Start
+
+ 
+ 
+ 
+		
